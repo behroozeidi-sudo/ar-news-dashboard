@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AR News – Persian Image</title>
+
+  <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+
+<body style="margin:0; overflow:hidden;">
+<a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+
+  <a-marker preset="hiro">
+
+    <a-plane
+      src="dashboard-fa.png"
+      position="0 0.8 0"
+      width="1.9"
+      height="1.3">
+    </a-plane>
+
+  </a-marker>
+
+  <a-entity camera></a-entity>
+</a-scene>
+</body>
+</html>
